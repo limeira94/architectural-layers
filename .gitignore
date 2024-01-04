@@ -1,0 +1,4 @@
+venv
+MVC/controller/__pycache__/
+MVC/model/__pycache__/
+MVC/view/__pycache__/
