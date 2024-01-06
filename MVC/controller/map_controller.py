@@ -1,4 +1,4 @@
-from model.datas_geo import GeoData
+from MVC.model.model_geo import GeoData
 from view.view_map import MapGUI
 
 
