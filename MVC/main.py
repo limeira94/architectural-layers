@@ -1,11 +1,13 @@
-from controller.mapa_controller import MapaController
+from controller.map_controller import MapController
 
 
 def main():
     file_path = '../data/sampa_zona_urb.geojson'
-    controller = MapaController(file_path)
-    controller.exibir_mapa()
-    
+    controller = MapController(file_path)
+    controller.display_map()
+
+    controller.filter_area()
+
 
 if __name__ == '__main__':
     main()
