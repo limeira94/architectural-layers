@@ -5,7 +5,6 @@ class MapViewModel {
     }
 
     addPolygon(coordinates) {
-        console.log('Polygon coordinates:', coordinates);
         this.model.storePolygonCoordinates(coordinates);
     }
 
@@ -16,7 +15,5 @@ class MapViewModel {
     addMarker(coordinates) {
         this.model.storeMarkerCoordinates(coordinates);
     }
-
-
 }
 

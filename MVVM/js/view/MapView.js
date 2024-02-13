@@ -21,7 +21,7 @@ class MapView {
             edit: {
                 featureGroup: drawnItems,
                 edit: false,
-                remove:false
+                remove: false
             },
             draw: {
                 polygon: true,
@@ -40,15 +40,12 @@ class MapView {
 
             if (type === 'polygon') {
                 coordinates = layer.getLatLngs();
-                console.log('Polygon coordinates:', coordinates);
                 this.viewModel.addPolygon(coordinates);
             } else if (type === 'polyline') {
                 coordinates = layer.getLatLngs();
-                console.log('Polyline coordinates:', coordinates);
                 this.viewModel.addPolyline(coordinates);
             } else if (type === 'marker') {
                 const latLng = layer.getLatLng();
-                console.log('Marker coordinates:', latLng);
                 this.viewModel.addMarker(latLng);
             }
             drawnItems.addLayer(layer);
